@@ -83,7 +83,6 @@ public class Calculate extends javax.swing.JFrame {
             }
         });
 
-        btn2.setBackground(new java.awt.Color(0, 51, 51));
         btn2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         btn2.setForeground(new java.awt.Color(0, 51, 51));
         btn2.setText("2");
@@ -375,31 +374,31 @@ public class Calculate extends javax.swing.JFrame {
     }//GEN-LAST:event_btn0ActionPerformed
 
     private void btnplusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnplusActionPerformed
-        num1 = (int) Double.parseDouble(txtDisplay.getText());
+        num1 =  Double.parseDouble(txtDisplay.getText());
         txtDisplay.setText("");
         operations = "+";
     }//GEN-LAST:event_btnplusActionPerformed
 
     private void btnminusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnminusActionPerformed
-        num1 = (int) Double.parseDouble(txtDisplay.getText());
+        num1 =  Double.parseDouble(txtDisplay.getText());
         txtDisplay.setText("");
         operations = "-";
     }//GEN-LAST:event_btnminusActionPerformed
 
     private void btnmultiplyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmultiplyActionPerformed
-        num1 = (int) Double.parseDouble(txtDisplay.getText());
+        num1 =  Double.parseDouble(txtDisplay.getText());
         txtDisplay.setText("");
         operations = "*";
     }//GEN-LAST:event_btnmultiplyActionPerformed
 
     private void btndivideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btndivideActionPerformed
-       num1 = Integer.parseInt(txtDisplay.getText());
+       num1 =  Double.parseDouble(txtDisplay.getText());
         txtDisplay.setText("");
         operations = "/";
     }//GEN-LAST:event_btndivideActionPerformed
 
     private void btnequalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnequalActionPerformed
-       num2 = Integer.parseInt(txtDisplay.getText());
+       num2 = Double.parseDouble(txtDisplay.getText());
        // Using the if condition for the logical part in the radio button
        
        if(operations.equals("+"))
