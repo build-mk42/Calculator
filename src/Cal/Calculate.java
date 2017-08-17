@@ -19,7 +19,9 @@ public class Calculate extends javax.swing.JFrame {
     String operations;
     public Calculate() {
         initComponents();
+        setResizable(false);
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -217,7 +219,7 @@ public class Calculate extends javax.swing.JFrame {
                         .addComponent(btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
                         .addComponent(btn3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btn4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -281,42 +283,42 @@ public class Calculate extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        txtDisplay.getDocument().addDocumentListener(new DocumentListener() {
-            public void changedUpdate(DocumentEvent e) {
+        //txtDisplay.getDocument().addDocumentListener(new DocumentListener() {
+            //  public void changedUpdate(DocumentEvent e) {
+                //
+                //  }
+            //  public void removeUpdate(DocumentEvent e) {
+                //
+                //  }
+            //  public void insertUpdate(DocumentEvent e) {
+                //
+                //Runnable doAssist = new Runnable() {
+                    //                        @Override
+                    //                        public void run() {
+                        //                            if(operations != null && operations.equals("+")){
+                            //    txtDisplay.setText(String.valueOf(num1 + Integer.parseInt(txtDisplay.getText())));
+                            //operations = "";
+                            //                        }
+                        //if(operations != null && operations.equals("-")){
+                            //    txtDisplay.setText(String.valueOf(num1 - Integer.parseInt(txtDisplay.getText())));
+                            //operations = "";
+                            //                        }
+                        //if(operations != null && operations.equals("*")){
+                            //    txtDisplay.setText(String.valueOf(num1 * Integer.parseInt(txtDisplay.getText())));
+                            //operations = "";
+                            //                        }
+                        //if(operations != null && operations.equals("/")){
+                            //    txtDisplay.setText(String.valueOf(num1 / Integer.parseInt(txtDisplay.getText())));
+                            //operations = "";
+                            //                        }
+                        //                    };
+                    //};
+                //                    SwingUtilities.invokeLater(doAssist);
+                //  }}
+        //);
+    //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-            }
-            public void removeUpdate(DocumentEvent e) {
-
-            }
-            public void insertUpdate(DocumentEvent e) {
-
-                Runnable doAssist = new Runnable() {
-                    @Override
-                    public void run() {
-                        if(operations != null && operations.equals("+")){
-                            txtDisplay.setText(String.valueOf(num1 + Integer.parseInt(txtDisplay.getText())));
-                            operations = "";
-                        }
-                        if(operations != null && operations.equals("-")){
-                            txtDisplay.setText(String.valueOf(num1 - Integer.parseInt(txtDisplay.getText())));
-                            operations = "";
-                        }
-                        if(operations != null && operations.equals("*")){
-                            txtDisplay.setText(String.valueOf(num1 * Integer.parseInt(txtDisplay.getText())));
-                            operations = "";
-                        }
-                        if(operations != null && operations.equals("/")){
-                            txtDisplay.setText(String.valueOf(num1 / Integer.parseInt(txtDisplay.getText())));
-                            operations = "";
-                        }
-                    };
-                };
-                SwingUtilities.invokeLater(doAssist);
-            }}
-        );
-        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-        pack();
+    pack();
     }// </editor-fold>//GEN-END:initComponents
         
     private void txtDisplayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDisplayActionPerformed
@@ -433,6 +435,7 @@ public class Calculate extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
